@@ -13,7 +13,7 @@ then
 		#if only a ine string is stated in the file without a space it will not return 
 		#the text since the script will take it as if it only the first name was stated
 		#while grep -P " $2$" $FILE will only check if the last name matchs
-		grep -P "([a-z-A-Z] )+$2$" $FILE
+		grep -P "([a-z-A-Z]+ )+$2$" $FILE
 		#grep -P " $2$" $FILE
 		echo " "
 		echo "Goodbye!"
